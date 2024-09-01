@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  z-index: 9999;
+  background-color: #000000;
+  color: #fff;
+  position: fixed;
+}
+
+h3 span {
+  color: transparent;
+  background: linear-gradient(to bottom, #d32626 50%, #20068e 50%);
+  background-clip: text;
+}
+.hero-section {
+  background: #000000;
+  color: #fff;
+  height: auto;
+  margin-top: 90px;
+  padding: 2.9rem 7rem 0rem 7rem;
+  display: flex;
+}
+
+@media screen and (min-width: 100px) and (max-width: 700px) {
+  .navigation-bar {
+    padding: 1.5rem 1.7rem;
+    height: 70px;
+    width: 100%;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: none;
+    padding: 3rem 2rem;
+    width: 50%;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 9999;
+    background-color: #000000;
+    color: #fff;
+    position: fixed;
+  }
+
+  .mobile-nav li {
+    margin-top: 2rem;
+    font-size: 20px;
+    font-family: 500;
+  }
+  .menu-icon {
+    width: 50px;
+  }
+  .close-icon {
+    width: 50px;
+    position: absolute;
+    top: 0;
+  }
+  h3 {
+    font-size: 32px;
+    font-weight: 350;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .menu-icon {
+    display: none;
+  }
+
+  h3 {
+    font-size: 40px;
+    font-weight: 350;
+  }
+  .close-icon {
+    display: none;
+  }
+  .desktop-nav {
+    display: block;
+  }
+  .desktop-nav li {
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5rem;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .hero-section {
+    flex-direction: row;
+    padding: 1rem 9rem 0rem 9rem;
+    gap: 12rem;
+  }
+  .hero-image img {
+    max-width: 100%;
+  }
+  .hero-text {
+    padding-top: 12rem;
+  }
+  .hero-text h4 {
+    font-size: 30px;
+  }
+}

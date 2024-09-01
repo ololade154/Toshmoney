@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toshmoney</title>
     <link rel="stylesheet" href="/css/index.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="navigation-bar">
@@ -34,7 +33,7 @@
       <img src="/images/menu-regular.png" class="menu-icon" id="open" />
     </div>
     <section class="hero-section">
-      <div class="hero-text" data-aos="fade-down-right">
+      <div class="hero-text">
         <h4>Get To Know</h4>
         <h5>
           Everything
@@ -45,31 +44,26 @@
         </h5>
         <p>
           Hi there i am Tosh, a senior software engineer with <br />over 9 years
-          of working experience. I’ve collaborate <br />with groups of people
+          of working experience. I've collaborate <br />with groups of people
           and company to developed a<br />
           useful products.
         </p>
         <button>Learn More</button>
       </div>
-      <div class="hero-image" data-aos="fade-left">
+      <div class="hero-image">
         <img src="/images/hero-section-image.png" alt="" />
       </div>
     </section>
-    <div class="section3">
-      <h5>hello</h5>
-
-      <script>
-        let closeIcon = document.getElementById("close");
-        let openIcon = document.getElementById("open");
-        let navBar = document.getElementById("nav-bar");
-        openIcon.addEventListener("click", function () {
-          navBar.style.display = "block";
-        });
-        closeIcon.addEventListener("click", function () {
-          navBar.style.display = "none";
-        });
-      </script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    </div>
+    <script>
+      let closeIcon = document.getElementById("close");
+      let openIcon = document.getElementById("open");
+      let navBar = document.getElementById("nav-bar");
+      openIcon.addEventListener("click", function () {
+        navBar.style.display = "block";
+      });
+      closeIcon.addEventListener("click", function () {
+        navBar.style.display = "none";
+      });
+    </script>
   </body>
 </html>

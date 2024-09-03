@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toshmoney</title>
-    <link rel="stylesheet" href="/css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <div class="navigation-bar">
@@ -21,7 +26,7 @@
         </ul>
       </div>
       <div class="mobile-nav" id="nav-bar">
-        <img src="/images/close.png" class="close-icon" id="close" />
+        <img src="./images/close.png" class="close-icon" id="close" />
         <ul>
           <li>Home</li>
           <li>About</li>
@@ -30,19 +35,19 @@
           <li>Contact</li>
         </ul>
       </div>
-      <img src="/images/menu-regular.png" class="menu-icon" id="open" />
+      <img src="./images/menu-regular.png" class="menu-icon" id="open" />
     </div>
     <section class="hero-section">
       <div class="hero-text">
-        <h4>Get To Know</h4>
-        <h5>
+        <h4 data-aos="fade-right">Get To Know</h4>
+        <h5 data-aos="fade-right">
           Everything
           <span
             >About <br />
             On This Website !</span
           >
         </h5>
-        <p>
+        <p data-aos="fade-right">
           Hi there i am Tosh, a senior software engineer with <br />over 9 years
           of working experience. I've collaborate <br />with groups of people
           and company to developed a<br />
@@ -51,19 +56,25 @@
         <button>Learn More</button>
       </div>
       <div class="hero-image">
-        <img src="/images/hero-section-image.png" alt="" />
+        <img data-aos="fade-up" src="./images/hero-section-image.png" alt="" />
       </div>
     </section>
     <script>
-      let closeIcon = document.getElementById("close");
-      let openIcon = document.getElementById("open");
-      let navBar = document.getElementById("nav-bar");
-      openIcon.addEventListener("click", function () {
-        navBar.style.display = "block";
+      let closeIcon = document.getElementById('close');
+      let openIcon = document.getElementById('open');
+      let navBar = document.getElementById('nav-bar');
+      openIcon.addEventListener('click', function () {
+        navBar.style.display = 'block';
       });
-      closeIcon.addEventListener("click", function () {
-        navBar.style.display = "none";
+      closeIcon.addEventListener('click', function () {
+        navBar.style.display = 'none';
       });
+    </script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js
+    "></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

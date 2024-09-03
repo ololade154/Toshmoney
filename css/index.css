@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -23,6 +23,7 @@ html {
   align-items: center;
   padding: 2rem 4rem;
 }
+
 h3 span {
   color: transparent;
   background: linear-gradient(to bottom, #d32626 50%, #20068e 50%);
@@ -31,13 +32,14 @@ h3 span {
 .hero-section {
   background: #000000;
   color: #fff;
-  height: auto;
   margin-top: 90px;
-  padding: 2.9rem 7rem 0rem 7rem;
+  height: 100vh; /** i added this giving height as auto is not the best in this scenario **/
+  /* padding: 2.9rem 7rem 0rem 7rem; */
+  padding: 3rem 4rem;
   display: flex;
 }
 
-@media screen and (min-width: 100px) and (max-width: 700px) {
+@media screen and (min-width: 100px) and (max-width: 770px) {
   .navigation-bar {
     padding: 1.5rem 1.7rem;
     height: 70px;
@@ -78,7 +80,7 @@ h3 span {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 770px) {
   .menu-icon {
     display: none;
   }
@@ -93,6 +95,11 @@ h3 span {
   .desktop-nav {
     display: block;
   }
+  .hero-text,
+  .hero-image {
+    flex: 1;
+  }
+
   .desktop-nav li {
     align-items: center;
     justify-content: center;
@@ -101,13 +108,18 @@ h3 span {
     font-size: 20px;
     font-weight: 500;
   }
+
+  .hero-image img {
+    width: 600px;
+    height: 600px;
+  }
   .mobile-nav {
     display: none;
   }
   .hero-section {
     flex-direction: row;
-    padding: 1rem 9rem 0rem 9rem;
-    gap: 12rem;
+    padding: 3rem 6rem;
+    gap: 5rem;
   }
   .hero-image img {
     max-width: 100%;
